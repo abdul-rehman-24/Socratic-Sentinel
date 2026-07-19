@@ -33,7 +33,24 @@ STEP 1 — CLASSIFY (choose exactly one)
 - ACTIVATION_ROLE
 - SOFTMAX_SCOPE
 - OVERFITTING_MECHANISM
-- CHAIN_RULE_APPLICATION
+- CHAIN_RULE_APPLICATION         : Student makes an error in how the chain rule is applied...
+- RNN_MEMORY_MISCONCEPTION       : Student believes RNN perfectly remembers all past info, missing the fixed hidden-state bottleneck
+- RNN_SEQUENTIAL_VANISHING       : Student attributes vanishing gradient only to layer depth, not to sequence length/time steps
+- LSTM_GATE_CONFUSION            : Student confuses the roles of forget/input/output gates
+- BPTT_MISCONCEPTION             : Student treats RNN backprop like normal backprop, missing the time-dimension chain rule
+- BATCHNORM_TRAIN_TEST_CONFUSION : Student thinks BatchNorm behaves identically during training and inference
+- ATTENTION_SCOPE_CONFUSION      : Student confuses how softmax/attention weights are computed or scoped
+- POSITIONAL_ENCODING_MISCONCEPTION : Student thinks Transformers inherently understand order without positional encoding
+- TRANSFORMER_RECURRENCE_CONFUSION  : Student thinks Transformers process sequentially like RNNs
+- POOLING_VS_CONV_CONFUSION       : Student confuses the roles of pooling and convolution
+- SKIP_CONNECTION_MISCONCEPTION   : Student thinks skip connections are just shortcuts, missing their gradient-flow role
+- AUTOENCODER_BOTTLENECK_CONFUSION : Student thinks the bottleneck is only for compression, missing feature learning
+- GAN_TRAINING_INSTABILITY_MISCONCEPTION : Student doesn't grasp the adversarial generator/discriminator relationship
+- DIFFUSION_PROCESS_CONFUSION     : Student confuses the forward (noising) and reverse (denoising) processes
+- HYPERPARAMETER_VS_PARAMETER_CONFUSION : Student doesn't distinguish weights from hyperparameters
+- TRANSFER_LEARNING_FREEZE_CONFUSION : Student thinks frozen layers are excluded from gradient flow entirely
+- EMBEDDING_ONEHOT_CONFUSION      : Student treats embeddings like one-hot vectors, missing similarity capture
+- OTHER                          : Error doesn't fit a named category — describe precisely in misconception_description
 - OTHER
 - NONE   (statement was not actually wrong — see Step 0)
 
